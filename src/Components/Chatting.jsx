@@ -77,7 +77,7 @@ const Chatting = ({ currentUser = {}, backToScreen }) => {
                                 (itm.sender_id === id && itm.receiver_id === sender.id)
                             ).map((itm, inx) => (
                                 <div key={inx} className={`flex ${itm.sender_id === sender.id ? "justify-end" : "justify-start"}`}>
-                                    <div className={`${itm.sender_id === sender.id ? "bg-green-800/70 text-white"   : "bg-white text-black"} inline-block w-fit px-3 py-1 rounded-md`}>
+                                    <div className={`${itm.sender_id === sender.id ? "bg-green-800/70 text-white" : "bg-white text-black"} inline-block w-fit px-3 py-1 rounded-md`}>
                                         <p className='text-base'>{itm.message}</p>
                                         <p className='text-xs text-gray-900 '> {itm.sender_name} </p>
                                     </div>
@@ -91,7 +91,7 @@ const Chatting = ({ currentUser = {}, backToScreen }) => {
                     <input type="text" name="message" id="" placeholder='Send Message....'
                         value={message}
                         onChange={(e) => { setMessage(e.target.value) }}
-                        className='flex-3 py-2 md:py-3 px-5 bg-gray-500/30 rounded-md  text-white outline-none text-base'
+                        className='flex-3 py-2 md:py-3 px-5 bg-gray-500/30 rounded-md text-white outline-none text-base'
                     />
                     <button className='flex-1 py-2 md:py-3 bg-green-500/30 rounded-md text-white outline-none text-base' onClick={chatMessageFunction} type='button'>Send</button>
                 </div>
