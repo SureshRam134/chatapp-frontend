@@ -93,7 +93,7 @@ const Chatting = ({ currentUser = {}, backToScreen }) => {
                         onChange={(e) => { setMessage(e.target.value) }}
                         className='flex-3 py-2 md:py-3 px-5 bg-gray-500/30 rounded-md text-white outline-none text-base'
                     />
-                    <button className='flex-2 py-2 md:py-3 bg-green-500/30 rounded-md text-white outline-none text-base' onClick={chatMessageFunction} type='button'>Send</button>
+                    <button className='flex-1 py-2 md:py-3 bg-green-500/30 rounded-md text-white outline-none text-base' onClick={chatMessageFunction} type='button'>Send</button>
                 </div>
             </div>
         </>
