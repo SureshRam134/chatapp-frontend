@@ -51,10 +51,10 @@ const Home = () => {
   }
 
   return (
-    <div className='h-screen relative lg:flex w-full'>
+    <div className='h-screen relative lg:flex w-full overflow-hidden'>
       <div className={`lg:flex-1 ${showScreen ? 'hidden lg:block' : "block"}`}>
-        <div className=' sticky top-0 w-full z-50  bg-white'> 
-          <h1 className='text-2xl font-bold text-green-900 text-center pt-10 pb-12'>Chap app</h1>
+        <div className=' sticky top-0 w-full z-50 bg-white'> 
+          <h1 className='text-2xl font-bold text-green-900 text-center p-10'>Chap app</h1>
           <div className='mb-3 mx-10 flex justify-between'>
             <h6 className='text-lg md:text-xl font-semibold text-gray-700 '>All User</h6>
             <button className='text-gray-700 hover:underline cursor-pointer text-base md:text-lg  ' onClick={logoutFunction}>Logout</button>
