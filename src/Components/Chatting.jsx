@@ -79,7 +79,7 @@ const Chatting = ({ currentUser = {}, backToScreen }) => {
                                 <div key={inx} className={`flex ${itm.sender_id === sender.id ? "justify-end" : "justify-start"}`}>
                                     <div className={`${itm.sender_id === sender.id ? "bg-green-800/70 text-white" : "bg-white text-black"} inline-block w-fit px-3 py-1 rounded-md`}>
                                         <p className='text-base'>{itm.message}</p>
-                                        <p className='text-[12px] text-gray-900'> {itm.sender_name} </p>
+                                        <p className='text-xs text-gray-900'> {itm.sender_name} </p>
                                     </div>
                                 </div>
                             ))
