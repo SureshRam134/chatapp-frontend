@@ -81,7 +81,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {currentUser.name && <div className={`lg:flex-1 ${!showScreen ? 'hidden lg:block' : "block"}`}>
+      {currentUser.name && <div className={`lg:flex-1 ${!showScreen ? 'hidden    lg:block' : "block"}`}>
         <Chatting currentUser={currentUser} backToScreen={backToScreen} />
       </div>}
 
